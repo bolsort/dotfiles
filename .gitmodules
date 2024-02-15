@@ -1,0 +1,7 @@
+[submodule "zsh/.config/oh-my-zsh"]
+	path = zsh/.config/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "zsh/.config/oh-my-zsh_custom/themes/powerlevel10k"]
+	path = zsh/.config/oh-my-zsh_custom/themes/powerlevel10k
+	url = https://gitee.com/romkatv/powerlevel10k.git
+	shallow = true
