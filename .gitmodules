@@ -5,3 +5,6 @@
 	path = zsh/.config/oh-my-zsh_custom/themes/powerlevel10k
 	url = https://gitee.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "tmux/.config/tmux/plugins/tpm"]
+	path = tmux/.config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
