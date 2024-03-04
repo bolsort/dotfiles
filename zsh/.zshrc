@@ -77,7 +77,7 @@ ZSH_CUSTOM="$HOME/.config/oh-my-zsh_custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast tmux rust golang python)
+plugins=(git gitfast tmux kubectl kubectx rust golang python)
 
 source $ZSH/oh-my-zsh.sh
 
