@@ -102,3 +102,8 @@ alias vi="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.config/p10k.zsh.
+[[ ! -f ~/dotfiles/zsh/.config/p10k.zsh ]] || source ~/dotfiles/zsh/.config/p10k.zsh
