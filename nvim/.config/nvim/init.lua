@@ -13,3 +13,12 @@ vim.opt.rtp:prepend(lazypath)
 require("options")
 -- Lazy default conf: https://github.com/folke/lazy.nvim?tab=readme-ov-file#%EF%B8%8F-configuration
 require("lazy").setup("plugins")
+
+local format_sync_grp = vim.api.nvim_create_augroup("GoFormat", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.go",
+  callback = function()
+   require('go.format').goimports()
+  end,
+  group = format_sync_grp,
+})
