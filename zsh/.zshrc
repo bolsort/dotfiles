@@ -95,7 +95,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin/:$PATH"
 # export ARCHFLAGS="-arch x86_64"
 
 alias vim="nvim"
-alias vi="nvim"
+alias vi="vim"
+alias k="kubectl"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
@@ -103,4 +104,8 @@ alias vi="nvim"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.config/p10k.zsh.
-[[ ! -f ~/dotfiles/zsh/.config/p10k.zsh ]] || source ~/dotfiles/zsh/.config/p10k.zsh
+[[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
+
+# Custom env override
+[[ ! -f ~/.config/custom.zsh ]] || source ~/.config/custom.zsh
+
