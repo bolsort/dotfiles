@@ -97,6 +97,10 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin/:$PATH"
 alias vim="nvim"
 alias vi="vim"
 alias k="kubectl"
+function bwu() { # bitwarden unlock and export session token
+  eval $(bw unlock | grep export | awk -F"\$" {'print $2'})
+}
+alias bws="bw list items | jq '.[] | .name' | grep -i" # bitwarden search in names
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
