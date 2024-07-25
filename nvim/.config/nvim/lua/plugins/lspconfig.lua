@@ -30,9 +30,12 @@ return {
       local lspconfig = require("lspconfig")
 
       mason_lspconfig.setup {
-        ensure_installed = { 'pyright', 'tsserver', 'html', 'lua_ls', 'gopls' }
+        ensure_installed = { 'pyright', 'tsserver', 'html', 'lua_ls', 'gopls', 'kotlin_language_server' }
       }
 
+      lspconfig.kotlin_language_server.setup({
+        capabilities = capabilities
+      })
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
