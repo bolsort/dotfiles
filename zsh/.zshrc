@@ -69,6 +69,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$HOME/.config/oh-my-zsh_custom"
 
+# Run tmux on startup
+ZSH_TMUX_AUTOSTART="true"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -82,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin/:$PATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
