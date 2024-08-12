@@ -82,7 +82,7 @@ plugins=(git gitfast tmux kubectl kubectx rust golang python)
 source $ZSH/oh-my-zsh.sh
 
 # PATH
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin/:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.local/bin/:/snap/bin:$PATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
