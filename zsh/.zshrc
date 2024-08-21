@@ -99,6 +99,7 @@ export LANG=en_US.UTF-8
 
 alias vim="nvim"
 alias vi="vim"
+alias nvim-plugins-update='nvim --headless "+Lazy! update" +qa && nvim --headless "+MasonUpdate" +qa'
 alias k="kubectl"
 function bwu() { # bitwarden unlock and export session token
   eval $(bw unlock | grep export | awk -F"\$" {'print $2'})
