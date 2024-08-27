@@ -15,6 +15,13 @@ return {
             default_workspace = "notes",
           },
         },
+        ["core.dirman.utils"] = {},
+        ["core.integrations.treesitter"] = {},
+        ["core.completion"] = {
+          config = {
+            engine = "nvim-cmp"
+          },
+        },
       },
     }
     vim.wo.foldlevel = 99

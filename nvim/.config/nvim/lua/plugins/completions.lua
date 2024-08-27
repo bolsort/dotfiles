@@ -6,7 +6,6 @@ return {
   {'hrsh7th/cmp-path'},                            
   {'hrsh7th/cmp-buffer'},                            
   {'hrsh7th/cmp-cmdline'},
-  {'hrsh7th/vim-vsnip'}, 
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
@@ -45,6 +44,7 @@ return {
           { name = 'buffer', keyword_length = 2 },    -- source current buffer
           { name = 'vsnip', keyword_length = 2 },     -- nvim-cmp source for vim-vsnip 
           { name = 'calc'},                           -- source for math calculation
+          { name = 'neorg'},                          -- source neorg
         },
         formatting = {
           fields = {'menu', 'abbr', 'kind'},
