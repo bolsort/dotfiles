@@ -15,6 +15,11 @@ return {
             default_workspace = "notes",
           },
         },
+        ["core.qol.todo_items"] = {
+          config = {
+            create_todo_items = true
+          },
+        },
         ["core.dirman.utils"] = {},
         ["core.integrations.treesitter"] = {},
         ["core.completion"] = {
