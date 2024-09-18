@@ -70,7 +70,7 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_CUSTOM="$HOME/.config/oh-my-zsh_custom"
 
 # Run tmux on startup
-ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOSTART="false"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
