@@ -1,7 +1,7 @@
-return {
-  'akinsho/toggleterm.nvim',
-  version = "*",
-  opts = {
-    open_mapping = [[<c-_>]], -- "CTRL-/"
-  },
-}
+ return {
+   'akinsho/toggleterm.nvim',
+   version = "*",
+   opts = {
+     open_mapping = [[<C-_>]],
+   },
+ }
