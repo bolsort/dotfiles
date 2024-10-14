@@ -5,6 +5,9 @@ import = [
 [env]
 TERM = "xterm-256color"
 
+[window]
+startup_mode = "Maximized"
+
 [keyboard]
 bindings = [
   { key = "Slash", mods = "Control", chars = "\u001f" }
