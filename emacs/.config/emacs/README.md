@@ -1,0 +1,7 @@
+- LSP client : https://github.com/emacs-lsp/lsp-mode
+- LSP tree view (using treemacs) : https://github.com/emacs-lsp/lsp-treemacs
+- Completion
+  - Real-time completion : https://github.com/company-mode/company-mode
+  - In-buffer completion menu : https://github.com/minad/corfu
+  - Vertical completion menu : https://github.com/minad/vertico
+- Tree file explorer : https://github.com/Alexander-Miller/treemacs
