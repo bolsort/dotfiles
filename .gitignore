@@ -1,6 +1,7 @@
 zsh/.config/oh-my-zsh/
 zsh/.config/oh-my-zsh_custom/themes/powerlevel10k/
 nvim/.config/nvim/lazy-lock.json
+nvim/.config/nvim/lazyvim.json
 tmux/.config/tmux/plugins/
 emacs/.config/emacs/*cache
 emacs/.config/emacs/elpa
