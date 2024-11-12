@@ -23,6 +23,9 @@
        -- function to run on closing the terminal
        on_close = function(term)
          vim.cmd("startinsert!")
+         -- on close neotree refresh stats files (git icon)
+         local state = require("neo-tree.sources.manager").get_state("filesystem")
+         require("neo-tree.sources.filesystem.commands").refrsh(state)
        end,
      })
      function _lazygit_toggle()
