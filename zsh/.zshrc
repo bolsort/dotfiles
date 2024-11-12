@@ -106,6 +106,11 @@ function bwu() { # bitwarden unlock and export session token
 }
 alias bws="bw list items | jq '.[] | .name' | grep -i" # bitwarden search in names
 
+function revenu() {
+  CAHT=$1
+  python3 -c "ht=$CAHT; print(ht-ht*0.022-ht*0.1160-ht*0.0020)"
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
 
