@@ -4,6 +4,7 @@ go.lua                  # GoLang
 helm.lua                # k8s Helm
 java.lua                # Java
 lspconfig.lua           # LSP protocol
+lualine.lua             # Info toolbar on bottom
 neorg.lua               # Neorg : OrgMod like
 neotree.lua             # Neotree : File browser
 orgmode.lua             # OrgMod
