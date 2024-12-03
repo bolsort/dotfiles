@@ -21,3 +21,20 @@ vim.wo.relativenumber = true
 vim.api.nvim_set_option("clipboard","unnamed") -- Yank to system clipboard
 
 vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr('$')})]]
+
+
+-- Clipboard for WSL
+if os.getenv('ŴSL_DISTRO_NAME') ~= nil then
+  vim.g.clipboard = {
+    name = "win32yank-wsl",
+    copy = {
+      ["+"] = "win32yank.exe -i --crlf",
+      ["*"] = "win32yank.exe -i --crlf",
+    },
+    paste = {
+      ["+"] = "win32yank.exe -o --lf",
+      ["*"] = "win32yank.exe -o --lf",
+    },
+    cache_enabled = true,
+  }
+end
