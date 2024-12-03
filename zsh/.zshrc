@@ -122,3 +122,5 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Custom env override
 [[ ! -f ~/.config/custom.zsh ]] || source ~/.config/custom.zsh
 
+# Try Autostart Zellij term multiplexer
+eval "$(zellij setup --generate-auto-start zsh)"
