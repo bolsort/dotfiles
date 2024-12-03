@@ -1,3 +1,4 @@
+POWERLEVEL9K_INSTANT_PROMPT=off
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -111,16 +112,22 @@ function revenu() {
   python3 -c "ht=$CAHT; print(ht-ht*0.022-ht*0.1160-ht*0.0020)"
 }
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.config/p10k.zsh.
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
-
 # Custom env override
 [[ ! -f ~/.config/custom.zsh ]] || source ~/.config/custom.zsh
+# Zellij
+export ZELLIJ_AUTO_ATTACH="true"
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach -c
+    else
+        zellij
+    fi
 
-# Try Autostart Zellij term multiplexer
-eval "$(zellij setup --generate-auto-start zsh)"
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
