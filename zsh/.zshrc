@@ -118,10 +118,13 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 [[ ! -f ~/.config/p10k.zsh ]] || source ~/.config/p10k.zsh
 # Custom env override
 [[ ! -f ~/.config/custom.zsh ]] || source ~/.config/custom.zsh
+
 # Zellij
+#ZSH_ZELLIJ_AUTOSTART="true"
 export ZELLIJ_AUTO_ATTACH="true"
-if [[ -z "$ZELLIJ" ]]; then
+if [[ -z "$ZELLIJ" && "ZSH_TMUX_AUTOSTART" == "true" ]]; then
     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        sleep 1 # workaround for : https://github.com/zellij-org/zellij/issues/2799
         zellij attach -c
     else
         zellij
