@@ -6,14 +6,36 @@ return {
       "neovim/nvim-lspconfig",
       opts = {
         servers = {
+          -- your jdtls configuration goes here
           jdtls = {
-            -- your jdtls configuration goes here
+            -- settings = {
+            --   java = {
+            --     configuration = {
+            --       runtimes = {
+            --         {
+            --           name = "JavaSE-23",
+            --           path = "/usr/local/sdkman/candidates/java/23-tem",
+            --         },
+            --       },
+            --     },
+            --   },
+            -- },
           },
         },
         setup = {
           jdtls = function()
+            -- your nvim-java configuration goes here
             require("java").setup({
-              -- your nvim-java configuration goes here
+              -- root_markers = {
+              --   "settings.gradle",
+              --   "settings.gradle.kts",
+              --   "pom.xml",
+              --   "build.gradle",
+              --   "mvnw",
+              --   "gradlew",
+              --   "build.gradle",
+              --   "build.gradle.kts",
+              -- },
             })
           end,
         },
