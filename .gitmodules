@@ -1,0 +1,10 @@
+[submodule "dot_config/external_oh-my-zsh"]
+	path = dot_config/external_oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "dot_config/oh-my-zsh_custom/themes/external_powerlevel10k"]
+	path = dot_config/oh-my-zsh_custom/themes/external_powerlevel10k
+	url = https://gitee.com/romkatv/powerlevel10k.git
+	shallow = true
+[submodule "dot_config/tmux/plugins/external_tpm"]
+	path = dot_config/tmux/plugins/external_tpm
+	url = https://github.com/tmux-plugins/tpm
