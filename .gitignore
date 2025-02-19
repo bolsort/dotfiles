@@ -1,9 +1,0 @@
-dot_config/oh-my-zsh/
-dot_config/oh-my-zsh_custom/themes/powerlevel10k/
-dot_config/nvim/lazy-lock.json
-dot_config/nvim/lazyvim.json
-dot_config/tmux/plugins/
-dot_config/emacs/*cache
-dot_config/emacs/elpa
-dot_config/emacs/auto-save-list
-dot_config/tmux/.keep

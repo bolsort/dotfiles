@@ -1,0 +1,12 @@
+[".config/oh-my-zsh"]
+  type = "git-repo"
+  url = "https://github.com/ohmyzsh/ohmyzsh.git"
+  refreshPeriod = "168h"
+[".config/oh-my-zsh/custom/themes/powerlevel10k"]
+  type = "git-repo"
+  url = "https://github.com/romkatv/powerlevel10k.git"
+  refreshPeriod = "168h"
+[".config/tmux/plugins/tpm"]
+  type = "git-repo"
+  url = "https://github.com/tmux-plugins/tpm"
+  refreshPeriod = "168h"

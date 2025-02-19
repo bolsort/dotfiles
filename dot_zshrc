@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="$HOME/.config/oh-my-zsh_custom"
+#ZSH_CUSTOM="$HOME/.config/oh-my-zsh_custom"
 
 # Run tmux on startup
 ZSH_TMUX_AUTOSTART="false"
